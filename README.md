@@ -15,14 +15,14 @@ body {
 
 button { padding: 15px 35px; font-size: 20px; border: none; border-radius: 12px; cursor: pointer; position: absolute; }
 
-#yes { background: #28a745; color: white; top: 50%; left: 42%; transform: translate(-50%, -50%); }
+#yes { background: #28a745; color: white; top: 50%; left: 40%; transform: translate(-50%, -50%); }
 
-#no { background: #dc3545; color: white; top: 50%; left: 58%; transform: translate(-50%, -50%); }
+#no { background: #dc3545; color: white; top: 50%; left: 60%; transform: translate(-50%, -50%); }
 
 #byline { color: black; font-size: 20px; position: absolute; top: 60%; left: 50%; transform: translateX(-50%); font-weight: bold; white-space: nowrap; } </style>
 
 </head>
-<body><h1 id="question">អ្នកព្រមធ្វើជាសង្សារខ្ញុំទេ? ❤️</h1><button id="yes">Yes</button> <button id="no">No</button>
+<body><h1 id="question">អូនព្រមធ្វើជាសង្សារបងអត់❤️</h1><button id="yes">Yes</button> <button id="no">No</button>
 
 <div id="byline">BY: Matin❤️</div><script>
 const yesBtn = document.getElementById('yes');
@@ -56,8 +56,8 @@ function positionButtons(){
     const rect = document.getElementById('question').getBoundingClientRect();
     yesBtn.style.top = rect.bottom + 50 + 'px';
     noBtn.style.top = rect.bottom + 50 + 'px';
-    yesBtn.style.left = '42%';
-    noBtn.style.left = '58%';
+    yesBtn.style.left = '38%';
+    noBtn.style.left = '62%';
     document.getElementById('byline').style.top = rect.bottom + 100 + 'px';
 }
 window.addEventListener('resize', positionButtons);
