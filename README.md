@@ -63,4 +63,3 @@ function positionButtons(){
 window.addEventListener('resize', positionButtons);
 positionButtons();
 </script></body>
-</html>
