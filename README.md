@@ -15,9 +15,9 @@ body {
 
 button { padding: 15px 35px; font-size: 20px; border: none; border-radius: 12px; cursor: pointer; position: absolute; }
 
-#yes { background: #28a745; color: white; top: 50%; left: 40%; transform: translate(-50%, -50%); }
+#yes { background: #28a745; color: white; top: 50%; left: 35%; transform: translate(-50%, -50%); }
 
-#no { background: #dc3545; color: white; top: 50%; left: 60%; transform: translate(-50%, -50%); }
+#no { background: #dc3545; color: white; top: 50%; left: 65%; transform: translate(-50%, -50%); }
 
 #byline { color: black; font-size: 20px; position: absolute; top: 60%; left: 50%; transform: translateX(-50%); font-weight: bold; white-space: nowrap; } </style>
 
@@ -56,8 +56,8 @@ function positionButtons(){
     const rect = document.getElementById('question').getBoundingClientRect();
     yesBtn.style.top = rect.bottom + 50 + 'px';
     noBtn.style.top = rect.bottom + 50 + 'px';
-    yesBtn.style.left = '38%';
-    noBtn.style.left = '62%';
+    yesBtn.style.left = '35%';
+    noBtn.style.left = '65%';
     document.getElementById('byline').style.top = rect.bottom + 100 + 'px';
 }
 window.addEventListener('resize', positionButtons);
